@@ -26,7 +26,7 @@ const skillsData = [
   },
   {
     category: "Others",
-    skills: ["C/C++", "Microservices"]
+    skills: ["C/C++", "Microservices", "Microsoft Suite", "Jira", "Confluence"]
   },
 ];
 
