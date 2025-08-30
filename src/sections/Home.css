@@ -1,0 +1,76 @@
+/* src/sections/Home.css */
+
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: calc(100vh - 80px);
+  padding: 0 2rem;
+}
+
+.home-headline {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.home-headline .highlight {
+  color: var(--primary-color);
+}
+
+.home-subheadline {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  max-width: 600px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.home-cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.cta-button.primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.cta-button.primary:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.cta-button.secondary {
+  background-color: transparent;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.cta-button.secondary:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+@media screen and (max-width: 400px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

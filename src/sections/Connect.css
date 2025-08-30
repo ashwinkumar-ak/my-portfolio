@@ -1,0 +1,60 @@
+/* src/sections/Connect.css */
+
+.connect-section {
+  text-align: center;
+}
+
+.connect-subtitle {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  margin-top: -1rem;
+  margin-bottom: 3rem;
+}
+
+.connect-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.connect-card {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: left;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.connect-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-color);
+}
+
+.connect-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.connect-text h4 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.25rem;
+  color: var(--heading-color);
+}
+
+.connect-text p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--secondary-color);
+}
+
+@media screen and (max-width: 400px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

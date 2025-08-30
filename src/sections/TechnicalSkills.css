@@ -1,0 +1,66 @@
+/* src/sections/TechnicalSkills.css */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skill-category-card {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-category-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-color);
+}
+
+.skill-category-card h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  column-count: 2;
+  column-gap: 2rem;
+}
+
+.skills-list li {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color);
+  padding: 0.4rem 0;
+  display: flex;
+  align-items: center;
+  break-inside: avoid;
+}
+
+.skills-list li::before {
+  content: '•';
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-right: 0.75rem;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 400px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
