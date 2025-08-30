@@ -52,8 +52,8 @@ const Navbar = () => {
            {/* Mobile-only Resume Button */}
           <li className="nav-item nav-item-mobile">
             <a
-              href="/my-portfolio/resume.pdf"
-              download="YourName_Resume.pdf"
+              href="./Resume.pdf"
+              download="AshwinKumar_Resume.pdf"
               title="Dowload Resume"
               className="resume-button mobile"
             >
@@ -64,8 +64,8 @@ const Navbar = () => {
 
         {/* Desktop-only Resume Button */}
         <a
-          href="/my-portfolio/resume.pdf"
-          download="YourName_Resume.pdf"
+          href="./Resume.pdf"
+          download="AshwinKumar_Resume.pdf"
           title="Dowload Resume"
           className="resume-button desktop"
         >
